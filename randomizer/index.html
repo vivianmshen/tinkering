@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Where should we travel this month and what should we do there?">
+		<meta name="keywords" content="Travel, randomizer, explore">
+
+		<title>Traveling Gnome</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<script>
+		
+			// locations
+			var tropicalLocations = [
+				'Bali',		
+				'Mykonos',
+				'Rio',
+				'Phuket',
+				'Indonesia',
+				'Punta Cana',
+				'Cambodia'
+			];
+
+			var tropicalPics = [
+			]
+
+			var cityLocations = [
+				'Bangalore',
+				'Singapore',
+				'Paris',
+				'London',
+				'Shanghai',
+				'Rome',
+				'Porto',
+				'San Francisco',
+			]
+
+			var cityPics = [
+			]
+
+			// activities
+			var tropicalActivities = [
+				'diving',
+				'snorkeling',
+				'poolside drinking',
+				'exploring wildlife',
+				'dancing',
+				'climbing',
+				'drinking',
+				'swimming',
+				'star-gazing',
+			]
+
+			var cityActivities = [
+				'sight-seeing',
+				'cafe-hunting',
+				'museum touring',
+				'people-watching',
+				'clubbing',
+				'dancing',
+				'restaurant hunting',
+				'bookstore browsing'
+			]
+			
+			var locationPreference = prompt("Do you like visiting the tropics or cities?");
+			if (locationPreference === "tropics" || locationPreference === "the tropics") {
+				var tropicalLocationNum = Math.floor(Math.random()*tropicalLocations.length);
+				var tropicalActivityNum = Math.floor(Math.random()*tropicalActivities.length);
+				document.write("How about you travel to <strong>" + tropicalLocations[tropicalLocationNum] + "</strong> and go <strong>" + tropicalActivities[tropicalActivityNum] + "!! </strong>");
+				document.write("<img src=\"" + tropicalLocations[tropicalLocationNum] + ".jpeg\">")
+			} else if (locationPreference === "cities" || locationPreference === "city") {
+				var cityLocationNum = Math.floor(Math.random()*cityLocations.length);
+				var cityActivityNum = Math.floor(Math.random()*cityActivities.length);
+				document.write("How about you travel to <strong>" + cityLocations[cityLocationNum] + "</strong> and go <strong>" + cityActivities[cityActivityNum] + "!! </strong>");
+				document.write("<img src=\"" + cityLocations[cityLocationNum] + ".jpeg\">")
+			} else {
+				document.write("Sorry we didn't catch that! Try refreshing and responding with \"cities\" or \"tropics\"");
+			}
+		
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
