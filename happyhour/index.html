@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Happy Hour App - How about a drink!?">
+		<meta name="keywords" content="happy hour, drink, beers">
+
+		<title>Happy Hour</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script>
+		
+			// Our List of Bars
+			var bars = [
+				'Novela',
+				'Local Edition',
+				'Press Club',
+				'Gravity',
+				'Nola',
+				'The Patio'
+			];
+			var barMaps = [
+				'<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1255661283612!2d-122.40354868468793!3d37.78709697975721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807d545227e1%3A0xcb7e781b6a2ab7b7!2sNovela+Bar!5e0!3m2!1sen!2sus!4v1491359018151" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+				'<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.104616183568!2d-122.40537748468786!3d37.78758797975703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580886bcc377b%3A0xd8c91154d34c9887!2sLocal+Edition+-+San+Francisco!5e0!3m2!1sen!2sus!4v1491359360517" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+				'<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1625842427397!2d-122.406424084688!3d37.7862293797574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580862be458e5%3A0x8d1472b35097e0!2sPress+Club!5e0!3m2!1sen!2sus!4v1491359384902" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+				'<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.708817532473!2d-122.16427068469773!3d37.44398297982102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb3a185f5747%3A0x7ec2f84389d49736!2sGravity+Bistro!5e0!3m2!1sen!2sus!4v1491359406772" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+				'<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.6643754812494!2d-122.16353408469776!3d37.445032679820876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb398ead0977%3A0x4ef2a9cf7c0e2ba!2sNola+-+Palo+Alto!5e0!3m2!1sen!2sus!4v1491359423388" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+				'<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.6564751253504!2d-122.1660566846977!3d37.445219279820755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb3767ff7a89%3A0x7e7acb4e825b1b81!2sThe+Patio!5e0!3m2!1sen!2sus!4v1491359338265" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>'
+			]
+			// Our List of Friends
+			var friends = [
+				'Grace',
+				'Ada',
+				'Sally',
+				'Marie',
+				'Harriet',
+				'Susan'
+			];
+
+			var randomNumberBars = Math.floor(Math.random()*bars.length);
+			var barname = bars[randomNumberBars];
+			var randomNumberFriends = Math.floor(Math.random()*friends.length);
+			var friendname = friends[randomNumberFriends];
+			document.write("How about you go to <strong>" + barname + "</strong> with <strong>" + friendname + "</strong><br><br>");
+			document.write(barMaps[randomNumberBars]);
+		
+		</script>
+	</head>
+	<body>
+		<!-- PAGE CONTENT WILL BE PRINTED HERE --> 
+	</body>
+</html>
