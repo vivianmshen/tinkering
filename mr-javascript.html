@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Ms. Javascript</title>
+	</head>
+	<body>
+		<h1>I'm Ms. Javascript</h1>
+		<a href="#" class="class1">Set to new</a>
+		<a href="#" class="class2">Revert to old</a>
+
+		<script type="text/javascript">
+			
+		var h1 = document.querySelector("h1");
+		var origText1 = h1.innerHTML;
+
+		var button1 = document.querySelector(".class1");
+		button1.addEventListener('click', function() {
+			h1.innerHTML = "I changed!";
+		});
+
+		var button2 = document.querySelector(".class2");
+		button2.addEventListener('click', function() {
+			h1.innerHTML = origText1;
+		});
+		
+		// console.log(h1, a);
+	
+
+		</script>
+	</body>
+</html>
