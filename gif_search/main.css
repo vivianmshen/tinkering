@@ -1,0 +1,15 @@
+#button-id {
+	padding: 20px;
+	width: 100px;
+	height: 20px;
+	color: blue;
+	/*background-color: black;*/
+}
+
+.js-container {
+
+}
+
+.container-images {
+	display: inline-block;
+}
